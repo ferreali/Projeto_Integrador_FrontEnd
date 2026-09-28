@@ -1,0 +1,53 @@
+// Portal+ - exemplo de pré-processador Sass/SCSS
+// Este arquivo demonstra variáveis, nesting e mixins.
+
+$primary: #2563eb;
+$text: #172033;
+$radius: 18px;
+
+@mixin card {
+  border: 1px solid #dfe5ee;
+  border-radius: $radius;
+  background: #fff;
+  padding: 1.5rem;
+}
+
+@mixin focus-ring {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
+
+.portal-card {
+  @include card;
+
+  color: $text;
+  transition: transform 220ms ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .title {
+    color: $primary;
+    font-weight: 700;
+  }
+
+  .description {
+    color: #667085;
+  }
+}
+
+.button {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background: $primary;
+  color: white;
+
+  &:hover {
+    background: darken($primary, 8%);
+  }
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}

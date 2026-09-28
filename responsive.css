@@ -1,0 +1,62 @@
+/* =========================================================
+   RESPONSIVE / MOBILE-FIRST
+   ========================================================= */
+
+@media (min-width: 700px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.35fr 0.65fr;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .api-panel {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .cta {
+    grid-template-columns: 1fr auto;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 980px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .auth-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .auth-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .auth-info .eyebrow {
+    margin-top: 2rem;
+  }
+}
