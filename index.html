@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal de Serviços Digitais - projeto integrador S15 a S21">
+  <title>Portal de Serviços Digitais</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/script.js" defer></script>
+  <script src="js/api.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="index.html" aria-label="Portal de Serviços Digitais - início">
+        Portal<span>+</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+              aria-label="Abrir menu"
+              aria-expanded="false"
+              aria-controls="mainNav">☰</button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#dados">API</a>
+        <a href="#faq">FAQ</a>
+        <a href="login.html" class="btn btn-small">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">PROJETO INTEGRADOR • S15–S21</p>
+          <h1>Tecnologia simples para serviços digitais.</h1>
+          <p>
+            Uma aplicação demonstrativa que reúne responsividade, animações,
+            APIs, acessibilidade, autenticação, testes e CI/CD.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#servicos">Conhecer serviços</a>
+            <a class="btn btn-outline" href="cadastro.html">Criar conta</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal" aria-label="Resumo do projeto">
+          <div class="status-dot" aria-hidden="true"></div>
+          <p class="card-label">Sistema online</p>
+          <strong>Portal+</strong>
+          <span>Interface responsiva e acessível</span>
+          <div class="metric-row">
+            <div><strong>7</strong><small>semanas</small></div>
+            <div><strong>100%</strong><small>web</small></div>
+            <div><strong>∞</strong><small>ideias</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">NOSSOS SERVIÇOS</p>
+          <h2>Recursos para uma experiência digital completa</h2>
+          <p>Cards, interações e componentes responsivos para revisar os principais conceitos.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="service-card reveal">
+            <span class="icon" aria-hidden="true">⚡</span>
+            <h3>Performance</h3>
+            <p>Estrutura otimizada, carregamento eficiente e boas práticas de front-end.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="icon" aria-hidden="true">🎨</span>
+            <h3>Design responsivo</h3>
+            <p>Abordagem Mobile-First usando Grid, Flexbox, variáveis e media queries.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="icon" aria-hidden="true">🔗</span>
+            <h3>Integração com API</h3>
+            <p>Dados externos são consultados com JavaScript e apresentados dinamicamente.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="icon" aria-hidden="true">♿</span>
+            <h3>Acessibilidade</h3>
+            <p>HTML semântico, foco visível, navegação por teclado e redução de movimento.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="icon" aria-hidden="true">🧪</span>
+            <h3>Testes</h3>
+            <p>Testes automatizados ajudam a verificar regras importantes da aplicação.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="icon" aria-hidden="true">🚀</span>
+            <h3>CI/CD</h3>
+            <p>Workflow de integração contínua executa testes automaticamente no GitHub.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="dados" class="section section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">S17 • API EXTERNA</p>
+          <h2>Informações obtidas de uma API</h2>
+          <p>O exemplo utiliza a API pública JSONPlaceholder para demonstrar consumo de dados.</p>
+        </div>
+
+        <div class="api-panel reveal">
+          <div>
+            <p class="card-label">Consulta demonstrativa</p>
+            <h3 id="apiTitle">Carregando...</h3>
+            <p id="apiBody">Aguarde enquanto os dados são consultados.</p>
+          </div>
+          <button class="btn" id="reloadApi">Atualizar dados</button>
+        </div>
+        <p id="apiStatus" class="status-message" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container narrow">
+        <div class="section-heading reveal">
+          <p class="eyebrow">S20 • ACESSIBILIDADE</p>
+          <h2>Perguntas frequentes</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>O site funciona no celular?</summary>
+            <p>Sim. O projeto foi construído seguindo uma abordagem Mobile-First.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>O projeto possui acessibilidade?</summary>
+            <p>Foram aplicados elementos semânticos, textos alternativos, foco visível, labels e suporte à redução de movimento.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>A autenticação é real?</summary>
+            <p>Não. Neste projeto educacional, a autenticação é simulada no navegador com localStorage. Em produção, deve existir um backend seguro.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta">
+        <div>
+          <p class="eyebrow">COMECE AGORA</p>
+          <h2>Crie seu acesso ao Portal+</h2>
+          <p>Experimente o fluxo de cadastro, login e dashboard.</p>
+        </div>
+        <a href="cadastro.html" class="btn">Criar conta</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Portal+ — Projeto educacional.</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
+</body>
+</html>

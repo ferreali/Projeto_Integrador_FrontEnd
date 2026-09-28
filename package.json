@@ -1,0 +1,21 @@
+{
+  "name": "portal-servicos",
+  "version": "1.0.0",
+  "description": "Projeto integrador educacional - S15 a S21",
+  "main": "js/script.js",
+  "scripts": {
+    "test": "node --test tests/app.test.js",
+    "test:verbose": "node tests/app.test.js"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "scss",
+    "api",
+    "ci-cd",
+    "acessibilidade"
+  ],
+  "author": "Projeto Educacional",
+  "license": "MIT"
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | Portal+</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/auth.js" defer></script>
+</head>
+<body class="auth-page">
+  <main class="auth-layout">
+    <section class="auth-info">
+      <a class="logo" href="index.html">Portal<span>+</span></a>
+      <p class="eyebrow">NOVO ACESSO</p>
+      <h1>Crie sua conta.</h1>
+      <p>Este cadastro é apenas para fins educacionais e armazena os dados localmente.</p>
+    </section>
+
+    <section class="auth-card" aria-labelledby="registerTitle">
+      <a class="back-link" href="index.html">← Voltar ao início</a>
+      <h2 id="registerTitle">Cadastro</h2>
+      <p>Preencha todos os campos.</p>
+
+      <form id="registerForm" novalidate>
+        <div class="form-group">
+          <label for="registerName">Nome</label>
+          <input type="text" id="registerName" required autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label for="registerEmail">E-mail</label>
+          <input type="email" id="registerEmail" required autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="registerPassword">Senha</label>
+          <input type="password" id="registerPassword" minlength="6" required autocomplete="new-password">
+        </div>
+
+        <div class="form-group">
+          <label for="registerConfirm">Confirmar senha</label>
+          <input type="password" id="registerConfirm" minlength="6" required autocomplete="new-password">
+        </div>
+
+        <p id="registerMessage" class="form-message" role="alert" aria-live="assertive"></p>
+        <button type="submit" class="btn btn-full">Criar conta</button>
+      </form>
+
+      <p class="auth-footer">Já possui conta? <a href="login.html">Entrar</a></p>
+    </section>
+  </main>
+</body>
+</html>

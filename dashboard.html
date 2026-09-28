@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Portal+</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/auth.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#dashboard">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="index.html">Portal<span>+</span></a>
+      <nav class="main-nav dashboard-nav" aria-label="Navegação do dashboard">
+        <a href="index.html">Início</a>
+        <button id="logoutButton" class="btn btn-small">Sair</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="dashboard" class="dashboard">
+    <div class="container">
+      <div class="dashboard-heading">
+        <div>
+          <p class="eyebrow">ÁREA RESTRITA</p>
+          <h1>Olá, <span id="userName">usuário</span>!</h1>
+          <p>Este é o seu dashboard demonstrativo.</p>
+        </div>
+        <div class="status-badge">● Sessão ativa</div>
+      </div>
+
+      <div class="dashboard-grid">
+        <article class="dashboard-card">
+          <span class="icon" aria-hidden="true">👤</span>
+          <p class="card-label">Usuário</p>
+          <h2 id="userEmail">-</h2>
+          <p>Conta armazenada localmente para fins educacionais.</p>
+        </article>
+
+        <article class="dashboard-card">
+          <span class="icon" aria-hidden="true">🧪</span>
+          <p class="card-label">Testes</p>
+          <h2>Ativos</h2>
+          <p>O projeto possui funções preparadas para testes automatizados.</p>
+        </article>
+
+        <article class="dashboard-card">
+          <span class="icon" aria-hidden="true">📈</span>
+          <p class="card-label">Monitoramento</p>
+          <h2 id="accessCount">0</h2>
+          <p>Acessos registrados nesta sessão do navegador.</p>
+        </article>
+      </div>
+
+      <section class="section dashboard-section">
+        <div class="section-heading">
+          <p class="eyebrow">S21 • MONITORAMENTO</p>
+          <h2>Registro de eventos</h2>
+        </div>
+        <div id="eventLog" class="event-log" aria-live="polite"></div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
